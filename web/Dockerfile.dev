@@ -4,4 +4,5 @@ WORKDIR /app
 COPY . .
 ENV HOST=0.0.0.0
 EXPOSE 5000
+EXPOSE 35729
 ENTRYPOINT npm install && npm run dev
