@@ -1,0 +1,7 @@
+
+FROM node
+WORKDIR /app
+COPY . .
+ENV HOST=0.0.0.0
+EXPOSE 5000
+ENTRYPOINT npm install && npm run dev
